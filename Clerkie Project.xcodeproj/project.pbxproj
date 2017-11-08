@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
+		3F8F82A41FB1400C008C242F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A31FB1400C008C242F /* ViewController.swift */; };
+		3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82A51FB1400C008C242F /* Main.storyboard */; };
+		3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */; };
+		3F8F82AC1FB1400C008C242F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AB1FB1400C008C242F /* Assets.xcassets */; };
+		3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */; };
+		3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */; };
+		3F8F82C51FB1400C008C242F /* Clerkie_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F8F82B61FB1400C008C242F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8F82961FB1400C008C242F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8F829D1FB1400C008C242F;
+			remoteInfo = "Clerkie Project";
+		};
+		3F8F82C11FB1400C008C242F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F8F82961FB1400C008C242F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F8F829D1FB1400C008C242F;
+			remoteInfo = "Clerkie Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F8F82A31FB1400C008C242F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F8F82A61FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
+		3F8F82AB1FB1400C008C242F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F8F82AE1FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F8F82B01FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_ProjectTests.swift; sourceTree = "<group>"; };
+		3F8F82BB1FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8F82C01FB1400C008C242F /* Clerkie ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_ProjectUITests.swift; sourceTree = "<group>"; };
+		3F8F82C61FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F8F829B1FB1400C008C242F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82B21FB1400C008C242F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82BD1FB1400C008C242F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8F82951FB1400C008C242F = {
+			isa = PBXGroup;
+			children = (
+				3F8F82A01FB1400C008C242F /* Clerkie Project */,
+				3F8F82B81FB1400C008C242F /* Clerkie ProjectTests */,
+				3F8F82C31FB1400C008C242F /* Clerkie ProjectUITests */,
+				3F8F829F1FB1400C008C242F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F8F829F1FB1400C008C242F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8F829E1FB1400C008C242F /* Clerkie Project.app */,
+				3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */,
+				3F8F82C01FB1400C008C242F /* Clerkie ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8F82A01FB1400C008C242F /* Clerkie Project */ = {
+			isa = PBXGroup;
+			children = (
+				3F8F82A11FB1400C008C242F /* AppDelegate.swift */,
+				3F8F82A31FB1400C008C242F /* ViewController.swift */,
+				3F8F82A51FB1400C008C242F /* Main.storyboard */,
+				3F8F82AB1FB1400C008C242F /* Assets.xcassets */,
+				3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */,
+				3F8F82B01FB1400C008C242F /* Info.plist */,
+				3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */,
+			);
+			path = "Clerkie Project";
+			sourceTree = "<group>";
+		};
+		3F8F82B81FB1400C008C242F /* Clerkie ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */,
+				3F8F82BB1FB1400C008C242F /* Info.plist */,
+			);
+			path = "Clerkie ProjectTests";
+			sourceTree = "<group>";
+		};
+		3F8F82C31FB1400C008C242F /* Clerkie ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */,
+				3F8F82C61FB1400C008C242F /* Info.plist */,
+			);
+			path = "Clerkie ProjectUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F8F829D1FB1400C008C242F /* Clerkie Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8F82C91FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie Project" */;
+			buildPhases = (
+				3F8F829A1FB1400C008C242F /* Sources */,
+				3F8F829B1FB1400C008C242F /* Frameworks */,
+				3F8F829C1FB1400C008C242F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clerkie Project";
+			productName = "Clerkie Project";
+			productReference = 3F8F829E1FB1400C008C242F /* Clerkie Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F8F82B41FB1400C008C242F /* Clerkie ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8F82CC1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectTests" */;
+			buildPhases = (
+				3F8F82B11FB1400C008C242F /* Sources */,
+				3F8F82B21FB1400C008C242F /* Frameworks */,
+				3F8F82B31FB1400C008C242F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8F82B71FB1400C008C242F /* PBXTargetDependency */,
+			);
+			name = "Clerkie ProjectTests";
+			productName = "Clerkie ProjectTests";
+			productReference = 3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F8F82BF1FB1400C008C242F /* Clerkie ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8F82CF1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectUITests" */;
+			buildPhases = (
+				3F8F82BC1FB1400C008C242F /* Sources */,
+				3F8F82BD1FB1400C008C242F /* Frameworks */,
+				3F8F82BE1FB1400C008C242F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8F82C21FB1400C008C242F /* PBXTargetDependency */,
+			);
+			name = "Clerkie ProjectUITests";
+			productName = "Clerkie ProjectUITests";
+			productReference = 3F8F82C01FB1400C008C242F /* Clerkie ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F8F82961FB1400C008C242F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Jing;
+				TargetAttributes = {
+					3F8F829D1FB1400C008C242F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					3F8F82B41FB1400C008C242F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F8F829D1FB1400C008C242F;
+					};
+					3F8F82BF1FB1400C008C242F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F8F829D1FB1400C008C242F;
+					};
+				};
+			};
+			buildConfigurationList = 3F8F82991FB1400C008C242F /* Build configuration list for PBXProject "Clerkie Project" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F8F82951FB1400C008C242F;
+			productRefGroup = 3F8F829F1FB1400C008C242F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8F829D1FB1400C008C242F /* Clerkie Project */,
+				3F8F82B41FB1400C008C242F /* Clerkie ProjectTests */,
+				3F8F82BF1FB1400C008C242F /* Clerkie ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F8F829C1FB1400C008C242F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */,
+				3F8F82AC1FB1400C008C242F /* Assets.xcassets in Resources */,
+				3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82B31FB1400C008C242F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82BE1FB1400C008C242F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F8F829A1FB1400C008C242F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8F82A41FB1400C008C242F /* ViewController.swift in Sources */,
+				3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */,
+				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82B11FB1400C008C242F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F8F82BC1FB1400C008C242F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8F82C51FB1400C008C242F /* Clerkie_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F8F82B71FB1400C008C242F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8F829D1FB1400C008C242F /* Clerkie Project */;
+			targetProxy = 3F8F82B61FB1400C008C242F /* PBXContainerItemProxy */;
+		};
+		3F8F82C21FB1400C008C242F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F8F829D1FB1400C008C242F /* Clerkie Project */;
+			targetProxy = 3F8F82C11FB1400C008C242F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F8F82A51FB1400C008C242F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8F82A61FB1400C008C242F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F8F82AE1FB1400C008C242F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F8F82C71FB1400C008C242F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F8F82C81FB1400C008C242F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F8F82CA1FB1400C008C242F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F8F82CB1FB1400C008C242F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F8F82CD1FB1400C008C242F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project.Clerkie-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clerkie Project.app/Clerkie Project";
+			};
+			name = Debug;
+		};
+		3F8F82CE1FB1400C008C242F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project.Clerkie-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clerkie Project.app/Clerkie Project";
+			};
+			name = Release;
+		};
+		3F8F82D01FB1400C008C242F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project.Clerkie-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clerkie Project";
+			};
+			name = Debug;
+		};
+		3F8F82D11FB1400C008C242F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYF9GM9529;
+				INFOPLIST_FILE = "Clerkie ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project.Clerkie-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clerkie Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F8F82991FB1400C008C242F /* Build configuration list for PBXProject "Clerkie Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8F82C71FB1400C008C242F /* Debug */,
+				3F8F82C81FB1400C008C242F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8F82C91FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8F82CA1FB1400C008C242F /* Debug */,
+				3F8F82CB1FB1400C008C242F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8F82CC1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8F82CD1FB1400C008C242F /* Debug */,
+				3F8F82CE1FB1400C008C242F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8F82CF1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8F82D01FB1400C008C242F /* Debug */,
+				3F8F82D11FB1400C008C242F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */,
+			);
+			currentVersion = 3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */;
+			path = Clerkie_Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F8F82961FB1400C008C242F /* Project object */;
+}
