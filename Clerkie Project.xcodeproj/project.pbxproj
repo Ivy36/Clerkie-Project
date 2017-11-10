@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
-		3F8F82A41FB1400C008C242F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A31FB1400C008C242F /* ViewController.swift */; };
 		3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82A51FB1400C008C242F /* Main.storyboard */; };
 		3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */; };
-		3F8F82AC1FB1400C008C242F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AB1FB1400C008C242F /* Assets.xcassets */; };
 		3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */; };
 		3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */; };
 		3F8F82C51FB1400C008C242F /* Clerkie_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */; };
+		3FF472A91FB3D24700A99ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472A81FB3D24600A99ED3 /* Assets.xcassets */; };
+		3FF472AD1FB3EAA300A99ED3 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */; };
+		3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */; };
+		3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */; };
+		3FF472B71FB5B10F00A99ED3 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472B61FB5B10F00A99ED3 /* image */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +40,8 @@
 /* Begin PBXFileReference section */
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F8F82A31FB1400C008C242F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F8F82A61FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
-		3F8F82AB1FB1400C008C242F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8F82AE1FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8F82B01FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,11 @@
 		3F8F82C01FB1400C008C242F /* Clerkie ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_ProjectUITests.swift; sourceTree = "<group>"; };
 		3F8F82C61FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF472A81FB3D24600A99ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
+		3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		3FF472B61FB5B10F00A99ED3 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +105,12 @@
 		3F8F82A01FB1400C008C242F /* Clerkie Project */ = {
 			isa = PBXGroup;
 			children = (
-				3F8F82A11FB1400C008C242F /* AppDelegate.swift */,
-				3F8F82A31FB1400C008C242F /* ViewController.swift */,
+				3FF472B81FB65F9600A99ED3 /* Supporting Files */,
 				3F8F82A51FB1400C008C242F /* Main.storyboard */,
-				3F8F82AB1FB1400C008C242F /* Assets.xcassets */,
-				3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */,
+				3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */,
+				3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */,
+				3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */,
+				3FF472B61FB5B10F00A99ED3 /* image */,
 				3F8F82B01FB1400C008C242F /* Info.plist */,
 				3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */,
 			);
@@ -126,6 +133,16 @@
 				3F8F82C61FB1400C008C242F /* Info.plist */,
 			);
 			path = "Clerkie ProjectUITests";
+			sourceTree = "<group>";
+		};
+		3FF472B81FB65F9600A99ED3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F8F82A11FB1400C008C242F /* AppDelegate.swift */,
+				3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */,
+				3FF472A81FB3D24600A99ED3 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */,
-				3F8F82AC1FB1400C008C242F /* Assets.xcassets in Resources */,
+				3FF472B71FB5B10F00A99ED3 /* image in Resources */,
+				3FF472A91FB3D24700A99ED3 /* Assets.xcassets in Resources */,
 				3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8F82A41FB1400C008C242F /* ViewController.swift in Sources */,
 				3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */,
+				3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */,
+				3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */,
+				3FF472AD1FB3EAA300A99ED3 /* loginVC.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
