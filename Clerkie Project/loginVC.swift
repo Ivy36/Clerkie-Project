@@ -15,30 +15,49 @@ class loginVC: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
     
+    var userList: String = ""
+    
+    var data: NSDictionary = [:]
+    
     @IBAction func loginAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "showHome", sender: self)
+        checkCredential(currName: usrnameTextField.text, currPassword: passwdTextField.text)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        userList = Bundle.main.path(forResource: "DefaultUsers", ofType: "plist")!
+        data = NSDictionary(contentsOfFile:userList) as! NSDictionary
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func checkCredential(currName name: String?, currPassword password: String?) {
+        if name == nil || name == "" {
+            showAlert("Username cannot be empty.")
+        } else if password == nil || password == "" {
+            showAlert("Password cannot be empty.")
+        } else {
+            let user = data.object(forKey: name!) as? NSDictionary
+            if user == nil {
+                showAlert("This user does not exist!")
+            } else {
+                let realPassword = user!.object(forKey: "password") as! NSString
+                if !realPassword.isEqual(to: password!) {
+                    showAlert("Password is not correct!")
+                } else {
+                    UserDefaults.standard.set(user!.object(forKey: "username"), forKey: "currUsername")
+                    UserDefaults.standard.set(realPassword, forKey: "currPassword")
+                    UserDefaults.standard.set(user!.object(forKey: "screenName"), forKey: "currScreenName")
+                    UserDefaults.standard.set(user!.object(forKey: "imageUrl"), forKey: "currImageUrl")
+                    UserDefaults.standard.synchronize()
+                    performSegue(withIdentifier: "showHome", sender: self)
+                }
+            }
+        }
     }
-    */
-
+    
+    func showAlert(_ message: String) {
+        let alert = UIAlertController(title:"", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
+

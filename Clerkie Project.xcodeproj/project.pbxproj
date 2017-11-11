@@ -18,6 +18,12 @@
 		3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */; };
 		3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */; };
 		3FF472B71FB5B10F00A99ED3 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472B61FB5B10F00A99ED3 /* image */; };
+		3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B91FB661DC00A99ED3 /* User.swift */; };
+		3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */; };
+		3FF472BE1FB7AEF600A99ED3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472BD1FB7AEF600A99ED3 /* Podfile */; };
+		5CF62655ACAA71F42A115EC0 /* Pods_Clerkie_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */; };
+		60DBFED0F5B4272EA94FA75D /* Pods_Clerkie_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */; };
+		C93F5D39FC2D00CF3BCF0ACC /* Pods_Clerkie_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61C7AE9C8EA469B2A76936D /* Pods_Clerkie_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project.release.xcconfig"; sourceTree = "<group>"; };
+		34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8F82A61FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +64,15 @@
 		3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
 		3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3FF472B61FB5B10F00A99ED3 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		3FF472B91FB661DC00A99ED3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultUsers.plist; sourceTree = "<group>"; };
+		3FF472BD1FB7AEF600A99ED3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1F23DD0DCBE89A427C67CA /* Pods-Clerkie ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project.debug.xcconfig"; sourceTree = "<group>"; };
+		E61C7AE9C8EA469B2A76936D /* Pods_Clerkie_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04EEF2055617E34B87C71A9 /* Pods-Clerkie ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93F5D39FC2D00CF3BCF0ACC /* Pods_Clerkie_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DBFED0F5B4272EA94FA75D /* Pods_Clerkie_ProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF62655ACAA71F42A115EC0 /* Pods_Clerkie_ProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +110,8 @@
 				3F8F82B81FB1400C008C242F /* Clerkie ProjectTests */,
 				3F8F82C31FB1400C008C242F /* Clerkie ProjectUITests */,
 				3F8F829F1FB1400C008C242F /* Products */,
+				EF2663A35715F379182DF56C /* Pods */,
+				8EF9B9DDDA366995D219C4C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,11 +130,12 @@
 			children = (
 				3FF472B81FB65F9600A99ED3 /* Supporting Files */,
 				3F8F82A51FB1400C008C242F /* Main.storyboard */,
+				3FF472B91FB661DC00A99ED3 /* User.swift */,
+				3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */,
 				3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */,
 				3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */,
-				3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */,
-				3FF472B61FB5B10F00A99ED3 /* image */,
 				3F8F82B01FB1400C008C242F /* Info.plist */,
+				3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */,
 				3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */,
 			);
 			path = "Clerkie Project";
@@ -138,11 +162,36 @@
 		3FF472B81FB65F9600A99ED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FF472B61FB5B10F00A99ED3 /* image */,
 				3F8F82A11FB1400C008C242F /* AppDelegate.swift */,
 				3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */,
 				3FF472A81FB3D24600A99ED3 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EF9B9DDDA366995D219C4C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E61C7AE9C8EA469B2A76936D /* Pods_Clerkie_Project.framework */,
+				836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */,
+				6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF2663A35715F379182DF56C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF472BD1FB7AEF600A99ED3 /* Podfile */,
+				CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */,
+				1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */,
+				34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */,
+				F04EEF2055617E34B87C71A9 /* Pods-Clerkie ProjectTests.release.xcconfig */,
+				08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */,
+				7E1F23DD0DCBE89A427C67CA /* Pods-Clerkie ProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F8F82C91FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie Project" */;
 			buildPhases = (
+				A3D61DBA33C594627E3C6312 /* [CP] Check Pods Manifest.lock */,
 				3F8F829A1FB1400C008C242F /* Sources */,
 				3F8F829B1FB1400C008C242F /* Frameworks */,
 				3F8F829C1FB1400C008C242F /* Resources */,
+				00719A0EA36B5DB7B7821994 /* [CP] Embed Pods Frameworks */,
+				5A1149227E64B33E73ECF7B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F8F82CC1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectTests" */;
 			buildPhases = (
+				5E733C2E5A71215AA60BFC9C /* [CP] Check Pods Manifest.lock */,
 				3F8F82B11FB1400C008C242F /* Sources */,
 				3F8F82B21FB1400C008C242F /* Frameworks */,
 				3F8F82B31FB1400C008C242F /* Resources */,
+				59A4B07D7D2332BABF48D59E /* [CP] Embed Pods Frameworks */,
+				F1975D51E61F6E5384C4557B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F8F82CF1FB1400C008C242F /* Build configuration list for PBXNativeTarget "Clerkie ProjectUITests" */;
 			buildPhases = (
+				8C2945CAB92C0086C496E57A /* [CP] Check Pods Manifest.lock */,
 				3F8F82BC1FB1400C008C242F /* Sources */,
 				3F8F82BD1FB1400C008C242F /* Frameworks */,
 				3F8F82BE1FB1400C008C242F /* Resources */,
+				77794ED147D5FD45AF30D332 /* [CP] Embed Pods Frameworks */,
+				12DF0D79717903ED7BE9A413 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,8 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF472BE1FB7AEF600A99ED3 /* Podfile in Resources */,
 				3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */,
 				3FF472B71FB5B10F00A99ED3 /* image in Resources */,
+				3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */,
 				3FF472A91FB3D24700A99ED3 /* Assets.xcassets in Resources */,
 				3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */,
 			);
@@ -275,6 +335,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00719A0EA36B5DB7B7821994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12DF0D79717903ED7BE9A413 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A4B07D7D2332BABF48D59E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A1149227E64B33E73ECF7B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E733C2E5A71215AA60BFC9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clerkie ProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77794ED147D5FD45AF30D332 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C2945CAB92C0086C496E57A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clerkie ProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D61DBA33C594627E3C6312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clerkie Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1975D51E61F6E5384C4557B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F8F829A1FB1400C008C242F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,6 +494,7 @@
 			files = (
 				3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */,
 				3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */,
+				3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */,
 				3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */,
 				3FF472AD1FB3EAA300A99ED3 /* loginVC.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
@@ -448,6 +661,7 @@
 		};
 		3F8F82CA1FB1400C008C242F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +677,7 @@
 		};
 		3F8F82CB1FB1400C008C242F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +693,7 @@
 		};
 		3F8F82CD1FB1400C008C242F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +711,7 @@
 		};
 		3F8F82CE1FB1400C008C242F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04EEF2055617E34B87C71A9 /* Pods-Clerkie ProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +729,7 @@
 		};
 		3F8F82D01FB1400C008C242F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +746,7 @@
 		};
 		3F8F82D11FB1400C008C242F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E1F23DD0DCBE89A427C67CA /* Pods-Clerkie ProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
