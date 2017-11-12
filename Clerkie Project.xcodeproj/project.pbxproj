@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
 		3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82A51FB1400C008C242F /* Main.storyboard */; };
-		3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */; };
 		3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */; };
 		3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */; };
 		3F8F82C51FB1400C008C242F /* Clerkie_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */; };
 		3FF472A91FB3D24700A99ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472A81FB3D24600A99ED3 /* Assets.xcassets */; };
-		3FF472AD1FB3EAA300A99ED3 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */; };
+		3FF472AD1FB3EAA300A99ED3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */; };
 		3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */; };
 		3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */; };
 		3FF472B71FB5B10F00A99ED3 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472B61FB5B10F00A99ED3 /* image */; };
 		3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B91FB661DC00A99ED3 /* User.swift */; };
 		3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */; };
-		3FF472BE1FB7AEF600A99ED3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472BD1FB7AEF600A99ED3 /* Podfile */; };
+		3FF472C61FB7B6BF00A99ED3 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */; };
+		3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C71FB7CB3200A99ED3 /* Chat.swift */; };
+		3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C91FB7CB4400A99ED3 /* Message.swift */; };
+		3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472CB1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld */; };
 		5CF62655ACAA71F42A115EC0 /* Pods_Clerkie_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */; };
 		60DBFED0F5B4272EA94FA75D /* Pods_Clerkie_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */; };
 		C93F5D39FC2D00CF3BCF0ACC /* Pods_Clerkie_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61C7AE9C8EA469B2A76936D /* Pods_Clerkie_Project.framework */; };
@@ -50,7 +52,6 @@
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8F82A61FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
 		3F8F82AE1FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8F82B01FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,13 +61,16 @@
 		3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_ProjectUITests.swift; sourceTree = "<group>"; };
 		3F8F82C61FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF472A81FB3D24600A99ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
 		3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3FF472B61FB5B10F00A99ED3 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		3FF472B91FB661DC00A99ED3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultUsers.plist; sourceTree = "<group>"; };
-		3FF472BD1FB7AEF600A99ED3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		3FF472C71FB7CB3200A99ED3 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		3FF472C91FB7CB4400A99ED3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3FF472CC1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
 		6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1F23DD0DCBE89A427C67CA /* Pods-Clerkie ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,12 +135,15 @@
 				3FF472B81FB65F9600A99ED3 /* Supporting Files */,
 				3F8F82A51FB1400C008C242F /* Main.storyboard */,
 				3FF472B91FB661DC00A99ED3 /* User.swift */,
-				3FF472AC1FB3EAA300A99ED3 /* loginVC.swift */,
+				3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */,
+				3FF472C71FB7CB3200A99ED3 /* Chat.swift */,
+				3FF472C91FB7CB4400A99ED3 /* Message.swift */,
+				3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */,
 				3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */,
 				3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */,
+				3FF472CB1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld */,
 				3F8F82B01FB1400C008C242F /* Info.plist */,
 				3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */,
-				3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */,
 			);
 			path = "Clerkie Project";
 			sourceTree = "<group>";
@@ -183,7 +190,6 @@
 		EF2663A35715F379182DF56C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3FF472BD1FB7AEF600A99ED3 /* Podfile */,
 				CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */,
 				1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */,
 				34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */,
@@ -310,7 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF472BE1FB7AEF600A99ED3 /* Podfile in Resources */,
 				3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */,
 				3FF472B71FB5B10F00A99ED3 /* image in Resources */,
 				3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */,
@@ -492,11 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F8F82AA1FB1400C008C242F /* Clerkie_Project.xcdatamodeld in Sources */,
 				3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */,
 				3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */,
+				3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */,
 				3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */,
-				3FF472AD1FB3EAA300A99ED3 /* loginVC.swift in Sources */,
+				3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */,
+				3FF472C61FB7B6BF00A99ED3 /* ChatVC.swift in Sources */,
+				3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */,
+				3FF472AD1FB3EAA300A99ED3 /* LoginVC.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,14 +672,17 @@
 			baseConfigurationReference = CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYF9GM9529;
 				INFOPLIST_FILE = "Clerkie Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -680,14 +691,17 @@
 			baseConfigurationReference = 1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYF9GM9529;
 				INFOPLIST_FILE = "Clerkie Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jingj93.Clerkie-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -803,12 +817,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3F8F82A81FB1400C008C242F /* Clerkie_Project.xcdatamodeld */ = {
+		3FF472CB1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */,
+				3FF472CC1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodel */,
 			);
-			currentVersion = 3F8F82A91FB1400C008C242F /* Clerkie_Project.xcdatamodel */;
+			currentVersion = 3FF472CC1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodel */;
 			path = Clerkie_Project.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

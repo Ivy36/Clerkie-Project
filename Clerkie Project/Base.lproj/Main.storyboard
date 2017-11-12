@@ -13,7 +13,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="loginVC" customModule="Clerkie_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Clerkie_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MxW-51-aur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,6 +186,7 @@
                                 <connections>
                                     <outlet property="userImg" destination="X4I-Tg-Zll" id="cXD-Tr-IPz"/>
                                     <outlet property="usernameLabel" destination="61g-5C-eiN" id="lM3-yL-mFb"/>
+                                    <segue destination="EuO-cW-3bS" kind="show" identifier="showChat" id="gN6-Xi-pzS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -195,9 +196,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" id="ZVb-fB-aiN"/>
-                    <connections>
-                        <segue destination="EuO-cW-3bS" kind="show" identifier="showChat" id="Dt3-1P-4hH"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1l-Rd-0ZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,13 +252,14 @@
         <!--ChatVC-->
         <scene sceneID="9qy-Ar-eax">
             <objects>
-                <viewController id="EuO-cW-3bS" userLabel="ChatVC" sceneMemberID="viewController">
+                <viewController id="EuO-cW-3bS" userLabel="ChatVC" customClass="ChatVC" customModule="Clerkie_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="osD-IJ-bFr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VWo-6c-rTO"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa5-2Y-hcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
