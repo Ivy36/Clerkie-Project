@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -220,34 +221,196 @@
             </objects>
             <point key="canvasLocation" x="647" y="9"/>
         </scene>
-        <!--ChartsVC-->
-        <scene sceneID="FOY-tr-hQQ">
+        <!--ChartsTableVC-->
+        <scene sceneID="0SE-xW-dif">
             <objects>
-                <tableViewController id="rSS-b0-8mT" userLabel="ChartsVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ski-fN-d01">
+                <tableViewController id="eEl-rb-S23" userLabel="ChartsTableVC" customClass="ChartsTableViewController" customModule="Clerkie_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ufx-Zw-YW4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TRQ-ns-Juh">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="barChartCell" rowHeight="300" id="xPf-9h-YGk" userLabel="barChartCell" customClass="BarChartTableViewCell" customModule="Clerkie_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TRQ-ns-Juh" id="teE-cS-zgQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xPf-9h-YGk" id="4NY-sm-4ff">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="otJ-MD-3Sx">
+                                            <rect key="frame" x="16" y="11" width="359" height="278"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbE-9H-W1X">
+                                                    <rect key="frame" x="0.0" y="0.0" width="73.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFL-kI-gOK">
+                                                    <rect key="frame" x="0.0" y="25.5" width="339" height="252.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="otJ-MD-3Sx" firstAttribute="top" secondItem="4NY-sm-4ff" secondAttribute="topMargin" id="Cf0-uf-Gc6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="otJ-MD-3Sx" secondAttribute="bottom" id="WfM-ZN-anf"/>
+                                        <constraint firstAttribute="trailing" secondItem="otJ-MD-3Sx" secondAttribute="trailing" id="gty-UA-rqD"/>
+                                        <constraint firstItem="otJ-MD-3Sx" firstAttribute="leading" secondItem="4NY-sm-4ff" secondAttribute="leadingMargin" id="jTD-F7-pQR"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="barChartView" destination="JFL-kI-gOK" id="Kf2-BA-URV"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pieChartCell" rowHeight="300" id="vRq-tQ-WEm" userLabel="pieChartCell" customClass="PieChartTableViewCell" customModule="Clerkie_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="328" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRq-tQ-WEm" id="FsY-01-XlP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SLR-tc-TiE">
+                                            <rect key="frame" x="16" y="11" width="359" height="278"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pie Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-KZ-9Ft">
+                                                    <rect key="frame" x="0.0" y="0.0" width="71" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWA-TC-oC0" userLabel="Pie Chart View">
+                                                    <rect key="frame" x="0.0" y="25.5" width="339" height="252.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SLR-tc-TiE" firstAttribute="top" secondItem="FsY-01-XlP" secondAttribute="topMargin" id="00J-Sq-JOz"/>
+                                        <constraint firstItem="SLR-tc-TiE" firstAttribute="leading" secondItem="FsY-01-XlP" secondAttribute="leadingMargin" id="Qj0-87-GNw"/>
+                                        <constraint firstAttribute="trailing" secondItem="SLR-tc-TiE" secondAttribute="trailing" id="SLY-Tc-FjZ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="SLR-tc-TiE" secondAttribute="bottom" id="xvy-ac-MDH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pieChartView" destination="TWA-TC-oC0" id="MsI-GM-2vn"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineChartCell" rowHeight="300" id="wsC-ak-R32" userLabel="lineChartCell" customClass="LineChartTableViewCell" customModule="Clerkie_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="628" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wsC-ak-R32" id="dLf-br-o9D">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mmb-B1-sok">
+                                            <rect key="frame" x="16" y="11" width="359" height="278"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twW-lB-y1g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="79.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noj-QU-WyN" userLabel="Line Chart View">
+                                                    <rect key="frame" x="0.0" y="25.5" width="339" height="252.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Mmb-B1-sok" secondAttribute="trailing" id="TuJ-mP-dhe"/>
+                                        <constraint firstItem="Mmb-B1-sok" firstAttribute="top" secondItem="dLf-br-o9D" secondAttribute="topMargin" id="Y3x-2o-U6M"/>
+                                        <constraint firstItem="Mmb-B1-sok" firstAttribute="leading" secondItem="dLf-br-o9D" secondAttribute="leadingMargin" id="mX4-w4-sEh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Mmb-B1-sok" secondAttribute="bottom" id="waA-dD-a2I"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lineChartView" destination="noj-QU-WyN" id="yQR-Mw-Gxa"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="doubleLineChartCell" rowHeight="300" id="Ngc-Dm-P3e" userLabel="dbLineChartCell" customClass="DoubleLineChartTableViewCell" customModule="Clerkie_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="928" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ngc-Dm-P3e" id="mby-d2-xsK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fZg-rS-XTs">
+                                            <rect key="frame" x="8" y="11" width="367" height="278"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Line Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYg-9T-jsX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="138" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Sb-nm-oTs" userLabel="Double Line Chart View">
+                                                    <rect key="frame" x="0.0" y="25.5" width="339" height="252.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fZg-rS-XTs" secondAttribute="trailing" id="3mB-7V-Lqh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="fZg-rS-XTs" secondAttribute="bottom" id="F8U-nQ-BNg"/>
+                                        <constraint firstItem="fZg-rS-XTs" firstAttribute="top" secondItem="mby-d2-xsK" secondAttribute="topMargin" id="aIV-2f-ea9"/>
+                                        <constraint firstItem="fZg-rS-XTs" firstAttribute="leading" secondItem="mby-d2-xsK" secondAttribute="leadingMargin" id="yg8-F0-nVI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dbLineChartView" destination="9Sb-nm-oTs" id="0pN-cS-lER"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="horizontalBarChartCell" rowHeight="300" id="Rx8-bx-Aue" userLabel="hrzBarChartCell" customClass="HorizontalBarChartTableViewCell" customModule="Clerkie_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1228" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rx8-bx-Aue" id="IOo-Vf-OfD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-zI-RiM">
+                                            <rect key="frame" x="8" y="11" width="367" height="278"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horizontal Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXs-99-aD1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-rj-B59" userLabel="Horizontal Bar Chart View">
+                                                    <rect key="frame" x="0.0" y="25.5" width="339" height="252.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="rh6-zI-RiM" secondAttribute="trailing" id="YVZ-El-CMB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="rh6-zI-RiM" secondAttribute="bottom" id="aoc-mZ-mKF"/>
+                                        <constraint firstItem="rh6-zI-RiM" firstAttribute="leading" secondItem="IOo-Vf-OfD" secondAttribute="leadingMargin" id="dtO-cN-av1"/>
+                                        <constraint firstItem="rh6-zI-RiM" firstAttribute="top" secondItem="IOo-Vf-OfD" secondAttribute="topMargin" id="oOF-ZW-iGR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="hrztBarChartView" destination="S9a-rj-B59" id="xg1-uW-WTD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="rSS-b0-8mT" id="g8N-s9-Whc"/>
-                            <outlet property="delegate" destination="rSS-b0-8mT" id="77y-p4-MKf"/>
+                            <outlet property="dataSource" destination="eEl-rb-S23" id="b2J-LP-Bh1"/>
+                            <outlet property="delegate" destination="eEl-rb-S23" id="sXZ-bf-Sah"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="kd4-4f-uB6"/>
+                    <navigationItem key="navigationItem" id="Iad-AA-Bp8"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3nG-GF-7If" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quM-GL-hdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2647" y="421"/>
+            <point key="canvasLocation" x="2645.5999999999999" y="419.64017991004499"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="9qy-Ar-eax">
@@ -275,7 +438,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="rSS-b0-8mT" kind="relationship" relationship="rootViewController" id="A7e-RM-5uy"/>
+                        <segue destination="eEl-rb-S23" kind="relationship" relationship="rootViewController" id="txQ-R6-cEm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwj-G2-kyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>

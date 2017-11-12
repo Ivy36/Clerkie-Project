@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
-		3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82A51FB1400C008C242F /* Main.storyboard */; };
 		3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */; };
 		3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */; };
 		3F8F82C51FB1400C008C242F /* Clerkie_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82C41FB1400C008C242F /* Clerkie_ProjectUITests.swift */; };
@@ -23,6 +22,16 @@
 		3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C71FB7CB3200A99ED3 /* Chat.swift */; };
 		3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C91FB7CB4400A99ED3 /* Message.swift */; };
 		3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472CB1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld */; };
+		3FF472DE1FB891E800A99ED3 /* ChartsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */; };
+		3FF472E41FB89F7900A99ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472E21FB89F7900A99ED3 /* Main.storyboard */; };
+		3FF472EA1FB8AC2000A99ED3 /* ChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */; };
+		3FF472EE1FB8B32900A99ED3 /* BarChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */; };
+		3FF472F21FB8C4E800A99ED3 /* PieChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472F11FB8C4E800A99ED3 /* PieChartTableViewCell.swift */; };
+		3FF472F41FB8C4F600A99ED3 /* LineChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472F31FB8C4F600A99ED3 /* LineChartTableViewCell.swift */; };
+		3FF472F61FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472F51FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift */; };
+		3FF472F81FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472F71FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift */; };
+		3FF472F91FB8CA1B00A99ED3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF472D41FB88CD400A99ED3 /* Charts.framework */; };
+		3FF472FA1FB8CA1B00A99ED3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF472D41FB88CD400A99ED3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5CF62655ACAA71F42A115EC0 /* Pods_Clerkie_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */; };
 		60DBFED0F5B4272EA94FA75D /* Pods_Clerkie_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */; };
 		C93F5D39FC2D00CF3BCF0ACC /* Pods_Clerkie_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61C7AE9C8EA469B2A76936D /* Pods_Clerkie_Project.framework */; };
@@ -43,7 +52,42 @@
 			remoteGlobalIDString = 3F8F829D1FB1400C008C242F;
 			remoteInfo = "Clerkie Project";
 		};
+		3FF472D31FB88CD400A99ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		3FF472D51FB88CD400A99ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		3FF472FB1FB8CA1B00A99ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FF472FD1FB8CA1B00A99ED3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FF472FA1FB8CA1B00A99ED3 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,7 +95,6 @@
 		34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F8F82A61FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F8F82AE1FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F8F82B01FB1400C008C242F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8F82B51FB1400C008C242F /* Clerkie ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +114,15 @@
 		3FF472C71FB7CB3200A99ED3 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		3FF472C91FB7CB4400A99ED3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3FF472CC1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
+		3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsCollectionVC.swift; sourceTree = "<group>"; };
+		3FF472E31FB89F7900A99ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewController.swift; sourceTree = "<group>"; };
+		3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartTableViewCell.swift; sourceTree = "<group>"; };
+		3FF472F11FB8C4E800A99ED3 /* PieChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartTableViewCell.swift; sourceTree = "<group>"; };
+		3FF472F31FB8C4F600A99ED3 /* LineChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartTableViewCell.swift; sourceTree = "<group>"; };
+		3FF472F51FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLineChartTableViewCell.swift; sourceTree = "<group>"; };
+		3FF472F71FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarChartTableViewCell.swift; sourceTree = "<group>"; };
 		6A4C0D432F0133EFBE0AC182 /* Pods_Clerkie_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1F23DD0DCBE89A427C67CA /* Pods-Clerkie ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		836E8F01CAAAD02F10A71184 /* Pods_Clerkie_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93F5D39FC2D00CF3BCF0ACC /* Pods_Clerkie_Project.framework in Frameworks */,
+				3FF472F91FB8CA1B00A99ED3 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +163,7 @@
 		3F8F82951FB1400C008C242F = {
 			isa = PBXGroup;
 			children = (
+				3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */,
 				3F8F82A01FB1400C008C242F /* Clerkie Project */,
 				3F8F82B81FB1400C008C242F /* Clerkie ProjectTests */,
 				3F8F82C31FB1400C008C242F /* Clerkie ProjectUITests */,
@@ -133,7 +187,14 @@
 			isa = PBXGroup;
 			children = (
 				3FF472B81FB65F9600A99ED3 /* Supporting Files */,
-				3F8F82A51FB1400C008C242F /* Main.storyboard */,
+				3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */,
+				3FF472E21FB89F7900A99ED3 /* Main.storyboard */,
+				3FF472F11FB8C4E800A99ED3 /* PieChartTableViewCell.swift */,
+				3FF472F31FB8C4F600A99ED3 /* LineChartTableViewCell.swift */,
+				3FF472F51FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift */,
+				3FF472F71FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift */,
+				3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */,
+				3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */,
 				3FF472B91FB661DC00A99ED3 /* User.swift */,
 				3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */,
 				3FF472C71FB7CB3200A99ED3 /* Chat.swift */,
@@ -177,6 +238,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3FF472CF1FB88CD300A99ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF472D41FB88CD400A99ED3 /* Charts.framework */,
+				3FF472D61FB88CD400A99ED3 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8EF9B9DDDA366995D219C4C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +283,12 @@
 				3F8F829C1FB1400C008C242F /* Resources */,
 				00719A0EA36B5DB7B7821994 /* [CP] Embed Pods Frameworks */,
 				5A1149227E64B33E73ECF7B2 /* [CP] Copy Pods Resources */,
+				3FF472FD1FB8CA1B00A99ED3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3FF472FC1FB8CA1B00A99ED3 /* PBXTargetDependency */,
 			);
 			name = "Clerkie Project";
 			productName = "Clerkie Project";
@@ -302,6 +374,12 @@
 			mainGroup = 3F8F82951FB1400C008C242F;
 			productRefGroup = 3F8F829F1FB1400C008C242F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3FF472CF1FB88CD300A99ED3 /* Products */;
+					ProjectRef = 3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F8F829D1FB1400C008C242F /* Clerkie Project */,
@@ -311,16 +389,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		3FF472D41FB88CD400A99ED3 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 3FF472D31FB88CD400A99ED3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3FF472D61FB88CD400A99ED3 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 3FF472D51FB88CD400A99ED3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		3F8F829C1FB1400C008C242F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */,
+				3FF472E41FB89F7900A99ED3 /* Main.storyboard in Resources */,
 				3FF472B71FB5B10F00A99ED3 /* image in Resources */,
 				3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */,
 				3FF472A91FB3D24700A99ED3 /* Assets.xcassets in Resources */,
-				3F8F82A71FB1400C008C242F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,11 +443,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 			);
@@ -498,14 +595,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */,
+				3FF472EE1FB8B32900A99ED3 /* BarChartTableViewCell.swift in Sources */,
 				3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */,
 				3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */,
+				3FF472F21FB8C4E800A99ED3 /* PieChartTableViewCell.swift in Sources */,
 				3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */,
 				3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */,
 				3FF472C61FB7B6BF00A99ED3 /* ChatVC.swift in Sources */,
+				3FF472F61FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift in Sources */,
+				3FF472F81FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift in Sources */,
 				3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */,
 				3FF472AD1FB3EAA300A99ED3 /* LoginVC.swift in Sources */,
+				3FF472F41FB8C4F600A99ED3 /* LineChartTableViewCell.swift in Sources */,
+				3FF472EA1FB8AC2000A99ED3 /* ChartsTableViewController.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
+				3FF472DE1FB891E800A99ED3 /* ChartsCollectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,23 +642,28 @@
 			target = 3F8F829D1FB1400C008C242F /* Clerkie Project */;
 			targetProxy = 3F8F82C11FB1400C008C242F /* PBXContainerItemProxy */;
 		};
+		3FF472FC1FB8CA1B00A99ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 3FF472FB1FB8CA1B00A99ED3 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F8F82A51FB1400C008C242F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F8F82A61FB1400C008C242F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3F8F82AE1FB1400C008C242F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FF472E21FB89F7900A99ED3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF472E31FB89F7900A99ED3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -671,6 +780,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA666A819BCFD7D36611DBED /* Pods-Clerkie Project.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -690,6 +800,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;

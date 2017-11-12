@@ -5,6 +5,7 @@ target 'Clerkie Project' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'JSQMessagesViewController'
+  pod 'Charts'
 
   # Pods for Clerkie Project
 
