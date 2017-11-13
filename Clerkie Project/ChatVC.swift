@@ -96,7 +96,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     @objc func handleTap(sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            collectionView.te
+            view.endEditing(true)
         }
     }
 
