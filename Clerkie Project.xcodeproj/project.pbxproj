@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F549A2E1FB94CBF00D09431 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */; };
+		3F549A301FB9555000D09431 /* RegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549A2F1FB9555000D09431 /* RegexHelper.swift */; };
 		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
 		3F8F82AF1FB1400C008C242F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8F82AD1FB1400C008C242F /* LaunchScreen.storyboard */; };
 		3F8F82BA1FB1400C008C242F /* Clerkie_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82B91FB1400C008C242F /* Clerkie_ProjectTests.swift */; };
@@ -93,6 +95,8 @@
 		08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project.release.xcconfig"; sourceTree = "<group>"; };
 		34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3F549A2F1FB9555000D09431 /* RegexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexHelper.swift; sourceTree = "<group>"; };
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8F82A11FB1400C008C242F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F8F82AE1FB1400C008C242F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */,
 				3FF472B91FB661DC00A99ED3 /* User.swift */,
 				3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */,
+				3F549A2F1FB9555000D09431 /* RegexHelper.swift */,
+				3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */,
 				3FF472C71FB7CB3200A99ED3 /* Chat.swift */,
 				3FF472C91FB7CB4400A99ED3 /* Message.swift */,
 				3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */,
@@ -605,8 +611,10 @@
 				3FF472F61FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift in Sources */,
 				3FF472F81FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift in Sources */,
 				3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */,
+				3F549A301FB9555000D09431 /* RegexHelper.swift in Sources */,
 				3FF472AD1FB3EAA300A99ED3 /* LoginVC.swift in Sources */,
 				3FF472F41FB8C4F600A99ED3 /* LineChartTableViewCell.swift in Sources */,
+				3F549A2E1FB94CBF00D09431 /* RegisterViewController.swift in Sources */,
 				3FF472EA1FB8AC2000A99ED3 /* ChartsTableViewController.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
 				3FF472DE1FB891E800A99ED3 /* ChartsCollectionVC.swift in Sources */,

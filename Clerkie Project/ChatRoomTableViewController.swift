@@ -11,23 +11,12 @@ import UIKit
 class ChatRoomVC: UITableViewController {
     let imageArray = [#imageLiteral(resourceName: "Iris.jpg"), #imageLiteral(resourceName: "Daris.jpg"), #imageLiteral(resourceName: "Michelle.jpg")]
     let nameArray = ["Iris", "Daris", "Michelle"]
-    let idArray = ["7", "8", "9"]
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    let idArray = ["-1", "-2", "-3"]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

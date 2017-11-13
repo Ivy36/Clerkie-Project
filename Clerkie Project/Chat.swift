@@ -9,25 +9,7 @@
 import UIKit
 import CoreData
 
-class Chat: NSManagedObject {
-//    var userID: String {
-//        get {
-//            return userId as? String ?? ""
-//        }
-//        set {
-//            userId = newValue as String
-//        }
-//    }
-//    
-//    var robotID: String {
-//        get {
-//            return robotId as? String ?? ""
-//        }
-//        set {
-//            robotId = newValue as String
-//        }
-//    }
-//    
+class Chat: NSManagedObject {    
     static func findOrCreateChat(matching userId: String, with robotId: String, in context: NSManagedObjectContext) throws -> Chat {
         let request: NSFetchRequest<Chat> = Chat.fetchRequest()
         request.predicate = NSPredicate(format: "userId = %@ and robotId = %@", userId, robotId)

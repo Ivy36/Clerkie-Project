@@ -15,6 +15,8 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
     
+    @IBOutlet weak var appIconImg: UIImageView!
+    
     var userList: String = ""
     
     var data: NSDictionary = [:]
@@ -23,10 +25,21 @@ class LoginVC: UIViewController {
         checkCredential(currName: usrnameTextField.text, currPassword: passwdTextField.text)
     }
     
+    @IBAction func registerAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "register", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         userList = Bundle.main.path(forResource: "DefaultUsers", ofType: "plist")!
+//        data = NSDictionary(contentsOfFile:userList) as! NSDictionary
+        self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "Cover"))
+        appIconImg.image = #imageLiteral(resourceName: "app icon2.png")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         data = NSDictionary(contentsOfFile:userList) as! NSDictionary
+        print("login data = \(data)")
     }
     
     func checkCredential(currName name: String?, currPassword password: String?) {

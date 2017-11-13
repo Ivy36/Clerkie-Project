@@ -91,12 +91,15 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         self.topContentAdditionalInset = 0
         print("get image = \(friendImg)")
         self.tabBarController?.tabBar.isHidden = true
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target:self, action:#selector(handleTap(sender:))))
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.collectionView.collectionViewLayout.springinessEnabled = true
-//    }
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            collectionView.te
+        }
+    }
+
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
         return datasource[indexPath.item]
