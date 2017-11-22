@@ -13,6 +13,8 @@ import AVKit
 import MobileCoreServices
 import Photos
 
+/* VC for chat interface
+ */
 class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var friendImg = #imageLiteral(resourceName: "ic_account_circle")
@@ -22,10 +24,8 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     var friendName = ""
     
     var userImg = UIImage()
-    
+    //Datasource for the collection view, storing all the message records between current chatters
     var datasource : [JSQMessage] = []
-    
-//    var currChat = Chat.init(entity: NSEntityDescription.entity(forEntityName: "Chat", in: AppDelegate.persistentContainer.viewContext)!, insertInto: AppDelegate.persistentContainer.viewContext)
     
     var container = AppDelegate.persistentContainer
     
@@ -45,6 +45,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Set sender info
         senderId = UserDefaults.standard.string(forKey: "currID")
         senderDisplayName = UserDefaults.standard.string(forKey: "currScreenName")
         getUserImage()
@@ -53,11 +54,8 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     func getDataSource() {
         let context = container.viewContext
-//        context.perform {
-//
-//        }
+        //Retrieve all the chat records of current chatters from database and append to local datasource
         if let chat = try? Chat.findOrCreateChat(matching: self.senderId, with: self.friendId, in: context) {
-            //                self.currChat = chat
             try? context.save()
             if chat.message != nil && chat.message!.count > 0 {
                 let messages = chat.message as! Set<Message>
@@ -66,6 +64,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
                         self.datasource.append(newMsg)
                     }
                 }
+                //Sort in time order
                 self.datasource.sort(by: { (msg1, msg2) -> Bool in
                     return msg1.date.timeIntervalSince1970 < msg2.date.timeIntervalSince1970
                 })
@@ -75,6 +74,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         print("datasource = \(self.datasource)")
     }
 
+    //Get avatar image
     func getUserImage() {
         if let url = UserDefaults.standard.object(forKey: "currImageUrl") as! String! {
             URLSession.shared.dataTask(with: NSURL(string: url)! as URL, completionHandler: {(data, response, error) -> Void in
@@ -86,10 +86,9 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        collectionView.estima
-//        collectionView.collectionViewLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         self.topContentAdditionalInset = 0
         print("get image = \(friendImg)")
+        //Hide keyboard when tapping on the blank space
         self.tabBarController?.tabBar.isHidden = true
         self.view.addGestureRecognizer(UITapGestureRecognizer(target:self, action:#selector(handleTap(sender:))))
     }
@@ -100,7 +99,7 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         }
     }
 
-    
+    //Settings for the collectionView
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
         return datasource[indexPath.item]
     }
@@ -152,36 +151,40 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
         return datasource[indexPath.item].senderId == senderId ? 0 : 15
     }
     
+    //Implement functions when user pressing send button
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         let context = container.viewContext
         let newMsg = Message(context: context)
+        
         newMsg.senderId = senderId
         newMsg.name = senderDisplayName
         newMsg.text = text
         newMsg.date = Date()
-//        newMsg.chat = self.currChat
-//        try? context.save()
+        
+        //Generate automatical reply message
         let rand = random()
         let newReply = Message(context: context)
         newReply.senderId = self.friendId
         newReply.name = friendName
         newReply.text = autoReply[rand]
         newReply.date = Date() + 5
+        
+        //Sync with database
         if let chat = try? Chat.findOrCreateChat(matching: self.senderId, with: self.friendId, in: context) {
             newMsg.chat = chat
             newReply.chat = chat
         }
         try? context.save()
+        
         print("Reload data")
         print("is on Main = \(Thread.isMainThread)")
         datasource.append(JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: newMsg.date, text: text))
-//        collectionView.reloadData()
         datasource.append(JSQMessage(senderId: friendId, senderDisplayName: friendName, date: newReply.date, text: newReply.text))
         collectionView.reloadData()
-//        collectionView.layoutSubviews()
         finishSendingMessage()
     }
     
+    //Function to generate random integer in a given range
     private func random() -> Int {
         let range = Range(0...4)
         let cnt = UInt32(range.upperBound - range.lowerBound)
@@ -228,8 +231,6 @@ class ChatVC: JSQMessagesViewController, UIImagePickerControllerDelegate, UINavi
     
     
     // PICKER VIEW FUNCTION
-    
-    
     private func chooseMedia(type: CFString)
     {
         picker.delegate = self

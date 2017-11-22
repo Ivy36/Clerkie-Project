@@ -21,22 +21,17 @@ class ChartsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        //return the number of sections
         return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        //return the number of rows
         return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if indexPath.section == 0 {
-//            var identifier = "barChartCell"
-        
-        
-        
-        //        barChartView.barData = chartData
+        //Set different charts for each cell
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "barChartCell", for: indexPath) as! BarChartTableViewCell
             cell.setChart()
@@ -61,6 +56,7 @@ class ChartsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //set the height for each row
         return CGFloat(300)
     }
 

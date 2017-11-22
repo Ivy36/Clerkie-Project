@@ -8,6 +8,8 @@
 
 import Foundation
 
+/* A simple struct to enable using regex 
+ */
 struct RegexHelper {
     let regex: NSRegularExpression?
     
@@ -16,6 +18,7 @@ struct RegexHelper {
                                         options: .caseInsensitive)
     }
     
+    //Return whether input correpsbonding to the regex
     func match(input: String) -> Bool {
         if let matches = regex?.matches(in: input,
                                                 options: [],

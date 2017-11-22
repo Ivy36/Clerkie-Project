@@ -8,6 +8,8 @@
 
 import UIKit
 
+/* VC for login interface
+ */
 class LoginVC: UIViewController {
     @IBOutlet weak var usrnameTextField: UITextField!
     
@@ -26,18 +28,20 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func registerAction(_ sender: UIButton) {
+        //Redirect to RegisterVC
         performSegue(withIdentifier: "register", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Get file path of DefaultUsers.plist
         userList = Bundle.main.path(forResource: "DefaultUsers", ofType: "plist")!
-//        data = NSDictionary(contentsOfFile:userList) as! NSDictionary
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "Cover"))
         appIconImg.image = #imageLiteral(resourceName: "app icon2.png")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //Retrieve data from plist
         data = NSDictionary(contentsOfFile:userList) as! NSDictionary
         print("login data = \(data)")
     }
@@ -48,6 +52,7 @@ class LoginVC: UIViewController {
         } else if password == nil || password == "" {
             showAlert("Password cannot be empty.")
         } else {
+            //Search for user input
             let user = data.object(forKey: name!) as? NSDictionary
             if user == nil {
                 showAlert("This user does not exist!")
@@ -56,6 +61,7 @@ class LoginVC: UIViewController {
                 if !realPassword.isEqual(to: password!) {
                     showAlert("Password is not correct!")
                 } else {
+                    //Store user info locally
                     UserDefaults.standard.set(user!.object(forKey: "username"), forKey: "currUsername")
                     UserDefaults.standard.set(realPassword, forKey: "currPassword")
                     UserDefaults.standard.set(user!.object(forKey: "screenName"), forKey: "currScreenName")
@@ -68,6 +74,7 @@ class LoginVC: UIViewController {
         }
     }
     
+    //Set alert pop-up window
     func showAlert(_ message: String) {
         let alert = UIAlertController(title:"", message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler: nil))

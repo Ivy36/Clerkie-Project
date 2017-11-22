@@ -8,6 +8,8 @@
 
 import UIKit
 
+/* VC for register interface
+ */
 class ChatRoomVC: UITableViewController {
     let imageArray = [#imageLiteral(resourceName: "Iris.jpg"), #imageLiteral(resourceName: "Daris.jpg"), #imageLiteral(resourceName: "Michelle.jpg")]
     let nameArray = ["Iris", "Daris", "Michelle"]

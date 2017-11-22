@@ -8,12 +8,13 @@
 
 import UIKit
 
+/* VC for register interface
+ */
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var PasswordTextFiel: UITextField!
-    
     
     @IBOutlet weak var screenNameTextField: UITextField!
     
@@ -27,18 +28,19 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "Cover"))
         appIconImg.image = #imageLiteral(resourceName: "app icon2")
+        //Get file path of DefaultUsers.plist and retrieve data
         userList = Bundle.main.path(forResource: "DefaultUsers", ofType: "plist")!
         data = NSMutableDictionary(contentsOfFile:userList) as! NSDictionary
     }
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+        //unwind segue
         dismiss(animated: true, completion: nil)
     }
     
 
     @IBAction func registerAction(_ sender: UIButton) {
         checkRegisterInfo()
-//        performSegue(withIdentifier: "registerOK", sender: self)
     }
     
     func checkRegisterInfo() {
@@ -52,6 +54,7 @@ class RegisterViewController: UIViewController {
         } else if screenName == nil || screenName == ""{
             showAlert("Screen Name cannot be empry.")
         }else {
+            //check whether username is a valid email address/ phone number
             let mailPattern =
             "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
             let mailMatcher = RegexHelper(mailPattern)
@@ -64,24 +67,17 @@ class RegisterViewController: UIViewController {
                 if user != nil {
                     showAlert("This user has already existed!")
                 } else {
+                    //Create a new user object
                     let cnt = data.count
                     let newUser: NSDictionary = ["username": name!, "password" : password!, "screenName" : screenName!, "imageUrl" : "https://images.unsplash.com/photo-1477276266798-898214c677da?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=cristian-newman-153712.jpg&s=3f59c16cde17f17e3b65cecf02fd4d4a", "id": String(cnt)]
                     
-                    print("newUser = \(newUser)")
-//                    newUser.setValue(name!, forKey: "username")
-//                    newUser.setValue(password!, forKey: "password")
-//                    newUser.setValue(screenName!, forKey: "screenName")
-//                    newUser.setValue("https://images.unsplash.com/photo-1477276266798-898214c677da?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=cristian-newman-153712.jpg&s=3f59c16cde17f17e3b65cecf02fd4d4a", forKey: "imageUrl")
-//
-//                    newUser.setValue(String(cnt), forKey: "id")
+                    //Write into plist and save
                     data.setValue(newUser, forKey: name!)
-                    print("data updata = \(data)")
-                   let filePath: String = NSHomeDirectory() + "/DefaultUsers.plist"
-                    print("filePath = \(filePath)")
-                    print("userList = \(userList)")
                     data.write(toFile: userList, atomically: true)
                     let newData = NSMutableDictionary(contentsOfFile:userList) as! NSDictionary
                     print("newData = \(newData)")
+                    
+                    //Save local user info
                     UserDefaults.standard.set(name!, forKey: "currUsername")
                     UserDefaults.standard.set(password!, forKey: "currPassword")
                     UserDefaults.standard.set(screenName!, forKey: "currScreenName")

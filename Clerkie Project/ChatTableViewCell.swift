@@ -8,6 +8,8 @@
 
 import UIKit
 
+/* Customize table view cell for chatroom tebleVC
+ */
 class ChatTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userImg: UIImageView!

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2D6A811FC4F9CD00F56F26 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D6A801FC4F9CD00F56F26 /* Message.swift */; };
 		3F549A2E1FB94CBF00D09431 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */; };
 		3F549A301FB9555000D09431 /* RegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F549A2F1FB9555000D09431 /* RegexHelper.swift */; };
 		3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F82A11FB1400C008C242F /* AppDelegate.swift */; };
@@ -18,13 +19,10 @@
 		3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */; };
 		3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */; };
 		3FF472B71FB5B10F00A99ED3 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472B61FB5B10F00A99ED3 /* image */; };
-		3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472B91FB661DC00A99ED3 /* User.swift */; };
 		3FF472BC1FB66C1800A99ED3 /* DefaultUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */; };
 		3FF472C61FB7B6BF00A99ED3 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */; };
 		3FF472C81FB7CB3200A99ED3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C71FB7CB3200A99ED3 /* Chat.swift */; };
-		3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472C91FB7CB4400A99ED3 /* Message.swift */; };
 		3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472CB1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld */; };
-		3FF472DE1FB891E800A99ED3 /* ChartsCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */; };
 		3FF472E41FB89F7900A99ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF472E21FB89F7900A99ED3 /* Main.storyboard */; };
 		3FF472EA1FB8AC2000A99ED3 /* ChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */; };
 		3FF472EE1FB8B32900A99ED3 /* BarChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */; };
@@ -95,6 +93,7 @@
 		08C353FC705B9337D1C29A9F /* Pods-Clerkie ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectUITests/Pods-Clerkie ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B91AC6EB81C24FC9E42DF79 /* Pods-Clerkie Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie Project/Pods-Clerkie Project.release.xcconfig"; sourceTree = "<group>"; };
 		34DBA1E73744AF1DCDD9192E /* Pods-Clerkie ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie ProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie ProjectTests/Pods-Clerkie ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2D6A801FC4F9CD00F56F26 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3F549A2F1FB9555000D09431 /* RegexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexHelper.swift; sourceTree = "<group>"; };
 		3F8F829E1FB1400C008C242F /* Clerkie Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,14 +111,11 @@
 		3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewController.swift; sourceTree = "<group>"; };
 		3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3FF472B61FB5B10F00A99ED3 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
-		3FF472B91FB661DC00A99ED3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FF472BB1FB66C1800A99ED3 /* DefaultUsers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultUsers.plist; sourceTree = "<group>"; };
 		3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		3FF472C71FB7CB3200A99ED3 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		3FF472C91FB7CB4400A99ED3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3FF472CC1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_Project.xcdatamodel; sourceTree = "<group>"; };
 		3FF472CE1FB88CD300A99ED3 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
-		3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsCollectionVC.swift; sourceTree = "<group>"; };
 		3FF472E31FB89F7900A99ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewController.swift; sourceTree = "<group>"; };
 		3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartTableViewCell.swift; sourceTree = "<group>"; };
@@ -191,20 +187,18 @@
 			isa = PBXGroup;
 			children = (
 				3FF472B81FB65F9600A99ED3 /* Supporting Files */,
-				3FF472DD1FB891E800A99ED3 /* ChartsCollectionVC.swift */,
 				3FF472E21FB89F7900A99ED3 /* Main.storyboard */,
+				3F2D6A801FC4F9CD00F56F26 /* Message.swift */,
 				3FF472F11FB8C4E800A99ED3 /* PieChartTableViewCell.swift */,
 				3FF472F31FB8C4F600A99ED3 /* LineChartTableViewCell.swift */,
 				3FF472F51FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift */,
 				3FF472F71FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift */,
 				3FF472ED1FB8B32900A99ED3 /* BarChartTableViewCell.swift */,
 				3FF472E91FB8AC2000A99ED3 /* ChartsTableViewController.swift */,
-				3FF472B91FB661DC00A99ED3 /* User.swift */,
 				3FF472AC1FB3EAA300A99ED3 /* LoginVC.swift */,
 				3F549A2F1FB9555000D09431 /* RegexHelper.swift */,
 				3F549A2D1FB94CBF00D09431 /* RegisterViewController.swift */,
 				3FF472C71FB7CB3200A99ED3 /* Chat.swift */,
-				3FF472C91FB7CB4400A99ED3 /* Message.swift */,
 				3FF472C51FB7B6BF00A99ED3 /* ChatVC.swift */,
 				3FF472B41FB5A2CE00A99ED3 /* ChatTableViewCell.swift */,
 				3FF472B21FB59B6600A99ED3 /* ChatRoomTableViewController.swift */,
@@ -602,11 +596,10 @@
 			files = (
 				3FF472B31FB59B6600A99ED3 /* ChatRoomTableViewController.swift in Sources */,
 				3FF472EE1FB8B32900A99ED3 /* BarChartTableViewCell.swift in Sources */,
-				3FF472BA1FB661DC00A99ED3 /* User.swift in Sources */,
-				3FF472CA1FB7CB4400A99ED3 /* Message.swift in Sources */,
 				3FF472F21FB8C4E800A99ED3 /* PieChartTableViewCell.swift in Sources */,
 				3FF472B51FB5A2CE00A99ED3 /* ChatTableViewCell.swift in Sources */,
 				3FF472CD1FB862FB00A99ED3 /* Clerkie_Project.xcdatamodeld in Sources */,
+				3F2D6A811FC4F9CD00F56F26 /* Message.swift in Sources */,
 				3FF472C61FB7B6BF00A99ED3 /* ChatVC.swift in Sources */,
 				3FF472F61FB8C50300A99ED3 /* DoubleLineChartTableViewCell.swift in Sources */,
 				3FF472F81FB8C51200A99ED3 /* HorizontalBarChartTableViewCell.swift in Sources */,
@@ -617,7 +610,6 @@
 				3F549A2E1FB94CBF00D09431 /* RegisterViewController.swift in Sources */,
 				3FF472EA1FB8AC2000A99ED3 /* ChartsTableViewController.swift in Sources */,
 				3F8F82A21FB1400C008C242F /* AppDelegate.swift in Sources */,
-				3FF472DE1FB891E800A99ED3 /* ChartsCollectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

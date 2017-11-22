@@ -9,7 +9,10 @@
 import UIKit
 import CoreData
 
-class Chat: NSManagedObject {    
+/* Definition for CoreData Entity 'Chat'
+ */
+class Chat: NSManagedObject {
+    //Search for specific chat in database, if no result is found, create a new one 
     static func findOrCreateChat(matching userId: String, with robotId: String, in context: NSManagedObjectContext) throws -> Chat {
         let request: NSFetchRequest<Chat> = Chat.fetchRequest()
         request.predicate = NSPredicate(format: "userId = %@ and robotId = %@", userId, robotId)

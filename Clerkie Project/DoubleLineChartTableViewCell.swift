@@ -9,6 +9,8 @@
 import UIKit
 import Charts
 
+/* Data source and default settings for double line chart
+ */
 class DoubleLineChartTableViewCell: UITableViewCell {
     
     let unitsSold1 = [15.0, 7.0, 5.0, 4.0, 10.0, 15.0, 8.0, 13.0, 10.0, 6.0, 4.0, 2.0]
@@ -16,6 +18,7 @@ class DoubleLineChartTableViewCell: UITableViewCell {
     @IBOutlet weak var dbLineChartView: UIView!
     
     func setChart() {
+        // Retrieve data
         var dataEntries: [ChartDataEntry] = []
         var dataEntries1: [ChartDataEntry] = []
         for i in 0..<months.count {
@@ -25,6 +28,7 @@ class DoubleLineChartTableViewCell: UITableViewCell {
             dataEntries1.append(dataEntry1)
         }
         
+        //Configure settings for both lines separately
         let chartDataSet = LineChartDataSet.init(values: dataEntries, label: "Units Sold 1")
         let chartDataSet1 = LineChartDataSet.init(values: dataEntries1, label: "Units Sold 2")
         chartDataSet.colors = [UIColor(red: 230/255, green: 126/255, blue: 34/255, alpha: 1)]
@@ -34,12 +38,16 @@ class DoubleLineChartTableViewCell: UITableViewCell {
         chartDataSet.circleColors = [UIColor.gray]
         chartDataSet1.circleColors = [UIColor.lightGray]
         let chartData = LineChartData.init(dataSets: [chartDataSet, chartDataSet1])
+        
+        //Settings for the chart view
         let newGraph = LineChartView()
         newGraph.frame = CGRect(x: 0, y: 0, width: dbLineChartView.bounds.width, height: dbLineChartView.bounds.height)
         newGraph.xAxis.valueFormatter = IndexAxisValueFormatter(values:months)
         newGraph.xAxis.labelPosition = .bottom
         newGraph.chartDescription?.text = ""
         newGraph.rightAxis.enabled = false
+        newGraph.xAxis.drawGridLinesEnabled = false
+        newGraph.leftAxis.drawGridLinesEnabled = false
         newGraph.data = chartData
         
         print("newGraph = \(newGraph)")
